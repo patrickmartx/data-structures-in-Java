@@ -29,3 +29,12 @@ public class LinearSearchVectorApp {
 
     }
 }
+
+/*
+O(n)
+
+| Vector lenght | repeats |
+| 10            | 10      |
+| 100           | 100     |
+| 1_000         | 1_000   |
+ */
