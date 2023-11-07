@@ -2,7 +2,7 @@ package structures.vector;
 
 import java.util.Scanner;
 
-public class linearSearchVectorApp {
+public class LinearSearchVectorApp {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int[] vector = new int[8];
