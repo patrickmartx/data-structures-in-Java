@@ -1,15 +1,19 @@
 package sorts.bubbleSort;
 
+import utils.PrintFormatting;
+
 import java.util.Arrays;
 
 public class BubbleSortApp {
     public static void main(String[] args) {
+        PrintFormatting print = new PrintFormatting();
         int[] vector = new int[10_000];
 
         for(int i = 0; i < vector.length; i++) {
             vector[i] = (int) (Math.random() * vector.length);
-            System.out.println(vector[i]);
         }
+
+        print.printInVector(vector);
 
         long initialTime = System.currentTimeMillis();
         // Bubble sort  / O(N²)
@@ -30,9 +34,8 @@ public class BubbleSortApp {
 
         System.out.println("\nin order\n" );
 
-        for(int i = 0; i < vector.length; i++) {
-            System.out.println(vector[i]);
-        }
+        print.printInVector(vector);
+
         System.out.println("time taken to order :" + time + "ms");
         // 188ms
     }

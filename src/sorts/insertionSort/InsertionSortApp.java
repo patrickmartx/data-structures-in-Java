@@ -1,19 +1,20 @@
 package sorts.insertionSort;
 
+import utils.PrintFormatting;
+
 public class InsertionSortApp {
     public static void main(String[] args) {
+        PrintFormatting print = new PrintFormatting();
         int[] vector = new int[10_000];
 
         for(int i=0; i < vector.length; i++) {
             vector[i] = (int) (Math.random() * vector.length);
         }
 
-        for(int i=0; i < vector.length; i++) {
-            System.out.println(vector[i]);
-        }
+        print.printInVector(vector);
 
         long initialTime = System.currentTimeMillis();
-        // Insertion sort
+        // Insertion sort // O(N²)
         int aux;
         int j;
         for (int i=1; i < vector.length; i++) {
@@ -30,9 +31,7 @@ public class InsertionSortApp {
 
         System.out.println("\nin order\n" );
 
-        for(int i=0; i < vector.length; i++) {
-            System.out.println(vector[i]);
-        }
+        print.printInVector(vector);
 
         System.out.println("time taken to order :" + time + "ms");
         // 32ms
