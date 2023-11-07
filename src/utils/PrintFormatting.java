@@ -19,15 +19,14 @@ public class PrintFormatting {
 
     public void printInVector(String[] values) {
         for (int i = 0; i < values.length; i++){
-            System.out.printf("-=-=-= position %d =-=-=-\n", i);
             System.out.println(values[i]);
         }
     }
 
     public void printInVector(int[] values) {
         for (int i = 0; i < values.length; i++){
-            System.out.printf("-=-=-= position %d =-=-=-\n", i);
             System.out.println(values[i]);
         }
     }
+
 }
