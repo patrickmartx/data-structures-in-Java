@@ -81,4 +81,8 @@ public class LinkedList<TYPE> {
         }
         return currentELement;
     }
+
+    public IteratorLinkedList<TYPE> getIterator() {
+        return new IteratorLinkedList<TYPE>(this.firstItem);
+    }
 }
