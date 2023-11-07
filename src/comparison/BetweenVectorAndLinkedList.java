@@ -4,7 +4,12 @@ import structures.list.linkedlist.IteratorLinkedList;
 import structures.list.linkedlist.LinkedList;
 
 import java.util.ArrayList;
+/*
+Study bigO notation
 
+Linear search: O(n)
+n = size of list
+ */
 public class BetweenVectorAndLinkedList {
     public static void main(String[] args) {
         LinkedList<Integer> linkedList = new LinkedList<Integer>();
