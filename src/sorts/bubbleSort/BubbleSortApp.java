@@ -34,5 +34,6 @@ public class BubbleSortApp {
             System.out.println(vector[i]);
         }
         System.out.println("time taken to order :" + time + "ms");
+        // 188ms
     }
 }
