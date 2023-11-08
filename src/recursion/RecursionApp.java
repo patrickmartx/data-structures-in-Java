@@ -2,7 +2,7 @@ package recursion;
 
 import utils.PrintFormatting;
 
-public class recursionApp {
+public class RecursionApp {
     public static void main(String[] args) {
         PrintFormatting pf = new PrintFormatting();
         int[] vector = new int[10];
