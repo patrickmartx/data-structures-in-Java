@@ -2,6 +2,10 @@ package structures.stack;
 
 import structures.list.linkedlist.LinkedList;
 
+/*
+STACK IS NOT A DATA STRUCTURE!!!
+IT IS AN ABSTRACT DATA TYPE
+ */
 public class Stack<TYPE> {
     private LinkedList<TYPE> list;
 
