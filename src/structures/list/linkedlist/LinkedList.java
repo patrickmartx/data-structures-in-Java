@@ -45,6 +45,18 @@ public class LinkedList<TYPE> {
         sizeOfList++;
     }
 
+    public void addInFirst(TYPE newValue) {
+        Element<TYPE> newElement = new Element<TYPE>(newValue);
+
+        if (this.firstItem == null && this.lastItem == null) {
+            this.firstItem = this.lastItem = newElement;
+        }else {
+            newElement.setNext(this.firstItem);
+            this.firstItem = newElement;
+        }
+        sizeOfList++;
+    }
+
     public void remove (TYPE value) {
         Element<TYPE> previous = null;
         Element<TYPE> currentELement = this.firstItem;
